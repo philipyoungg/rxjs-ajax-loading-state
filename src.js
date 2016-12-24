@@ -11,7 +11,7 @@
   const response = request
   .switchMap(url =>
     fetch(url)
-    .then(res => res.json())
+      .then(res => res.json())
   )
   .map(user => `
     <h1>${user.name}</h1>
